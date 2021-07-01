@@ -1,0 +1,38 @@
+@layout('layout.app')
+
+@section('content')
+<form method="POST" action="/usuarios/cargarFoto/1" enctype="multipart/form-data">
+  <input type="file" name="avatar" />
+  <button type="submit"> Submit </button>
+</form>
+<div class="h-100 w-100 row justify-content-center align-items-center">
+  <div class="col-6">
+    @include('layout.notification')
+    <h1 class="text-center">Signup</h1>
+    <form action="/api/signup" method="POST">
+      {{ csrfField() }}
+      
+      <div class="form-group">
+        <input type="text" name="name" value="{{ old('name') }}" class="form-control {{ hasErrorFor('name') ? 'is-invalid' : '' }}" placeholder=" Name">
+        {{ elIf('<span class="invalid-feedback">$self</span>', getErrorFor('name'), hasErrorFor('name')) }}
+      </div>
+      <br>
+      <div class="form-group">
+        <input type="email" name="email" value="{{ old('email') }}" class="form-control {{ hasErrorFor('email') ? 'is-invalid' : '' }}" placeholder="Email">
+        {{ elIf('<span class="invalid-feedback">$self</span>', getErrorFor('email'), hasErrorFor('email')) }}
+      </div>
+      <br>
+      <div class="form-group">
+        <input type="password" name="key_password" class="form-control {{ hasErrorFor('key_password') ? 'is-invalid' : '' }}" placeholder="Password">
+        {{ elIf('<span class="invalid-feedback">$self</span>', getErrorFor('key_password'), hasErrorFor('key_password')) }}
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary btn-block">
+        Create Account
+      </button>
+    </form>
+  </div>
+
+</div>
+
+@endsection

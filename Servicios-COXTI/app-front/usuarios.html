@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="usuarios.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="iconos-navbar">
+      <div class="sesion-user">
+        <input type="checkbox" id="spoiler2" />
+        <label for="spoiler2"><i class="far fa-user"></i></label>
+        <div class="spoiler">
+          <div class="photo-user">
+            <i class="fas fa-user perfil-user"></i>
+            <i class="fas fa-camera camara-user"></i>
+          </div>
+          <div class="form-user">
+            <div class="column1">
+              <p>Carlos Alberto</p>
+            </div>
+            <div class="column2">
+              <button class="cerrar-sesion">Cerrar Sesión</button>
+              <button>Editar Perfil</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notificaciones">
+        <i class="far fa-bell"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="imagen-sidebar">
+    <a href="dashboard.html">
+      <div class="business-name"><img src="./img/Grupo 75.svg" alt=""></div>
+    </a>
+  </div>
+  <div id="sidebar" class="abrirmenu">
+    <ul>
+      <div class="lista">
+        <a href="dashboard.html">
+          <li class="dashboar-li"><i class="fas fa-columns"></i>Dashboard</li>
+        </a>
+        <a href="usuarios.html">
+          <li><i class="fas fa-users"></i>Usuarios</li>
+        </a>
+        <a href="aplicaciones.html">
+          <li class="users-li"><i class="fas fa-tv"></i>Aplicaciones</li>
+        </a>
+        <a href="reportes.html">
+          <li><i class="fas fa-align-right"></i>Reportes</li>
+        </a>
+      </div>
+    </ul>
+  </div>
+
+  <br>
+
+  <div class="contenido">
+    <div class="botones-informativos">
+      <span class="span-search"><i class="fas fa-search"></i></span>
+      <input type="search" placeholder="Buscar">
+      <input type="submit" value="Crear Usuario">
+      <span id="icon-user-plus"><i class="fas fa-user-plus"></i></span>
+    </div>
+
+    <br><br><br>
+
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>First</th>
+          <th>Last</th>
+          <th>Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>3</th>
+          <td>Larry the</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Larry the</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Larry the</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Larry the</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Larry the</td>
+          <td>@twitter</td>
+          <td>@twitter</td>
+        </tr>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>

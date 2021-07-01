@@ -1,0 +1,22 @@
+ @layout('layout.app')
+
+	@section('content')
+	<h1>Editar App</h1>
+		<form action="{{ '/apps/'+ app.id + '?_method=PUT' }}  " method="POST">
+			{{ csrfField() }}	
+
+			<div class="form-group">
+				<label for="">Nombre</label>
+				<input type="text" name="name" class="form-control" value="{{ app.name }}">
+			</div>
+			
+      <div class="form-group">
+				<label for="">URL</label>
+				<input type="url" name="url" class="form-control" value="{{ app.url }}">
+			</div>
+
+			<button type="submit" class="btn btn-primary">
+				Actualizar
+			</button>
+		</form>
+	@endsection

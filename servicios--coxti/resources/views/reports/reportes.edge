@@ -1,0 +1,45 @@
+@layout('layout.app')
+
+@section('content')
+
+<input type="date" id="myDate" />
+  <div class="box">
+    <h1 class="title">Reportes</h1>
+    <table class="table is-bordered is-striped is-narrow is-fullwidth">
+      <thead>
+        <tr>
+          <th style="width: 80px;">#</th>
+          <th>Valor 1</th>
+          <th>Valor 2</th>
+          <th>Valor 3</th>
+          <th>Valor 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        @each(report in reports)
+          <tr>
+            <td>
+              {{ ($loop.index + 1) }}
+            </td>
+            <td>
+              {{ report.valor1 }}
+            </td>
+            <td>
+              {{ report.valor2 }}
+            </td>
+            <td>
+              {{ report.valor3 }}
+            </td>
+            <td>
+              {{ report.valor4 }}
+            </td>
+          </tr>
+        @else
+          <tr>
+            <td colspan="3" class="has-text-centered">¡Ningun reporte creado todavía!</td>
+          </tr>
+        @endeach
+      </tbody>
+    </table>
+  </div>
+@endsection

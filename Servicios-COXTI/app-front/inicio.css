@@ -1,0 +1,1087 @@
+body{
+ /* background: linear-gradient(to bottom, #06669e, #ffffff)no-repeat;*/
+  background: url("./img/4882066.png")no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-attachment: fixed;
+  background-position: left;
+}
+
+.contenedor{
+  display:flex;
+  width: 70%;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+  background-color: #FEFEFE;
+  opacity: .8;
+  border-radius: 18px;
+}
+
+.logo-coxti{
+  height: 400px;
+  margin-right: 195px;
+}
+
+.logo-coxti img{
+  width: 160%;
+  height: 110%;
+  margin-top: 26px;
+}
+
+.min-card img{
+  width: 75%;
+  margin-bottom: 32px;
+}
+
+.min-card{
+  width: 50%;
+  margin-top: 67px;
+  margin-right: 6%;
+}
+
+.min-card span{
+  width: 40px;
+  height: 35px;
+  background-color: #073669;
+  color: #ffffff;
+  font-size: 22px;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 12px;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 7px 0px 0px 7px;
+}
+
+.min-card input[type="text"],
+input[type="password"]{
+  margin: 12px;
+  width: 286px;
+  height: 39px;
+  border-radius: 0px 7px 7px 0px;
+  border: 1px solid #073669;
+  outline: none;
+  opacity: 1;
+  margin-left: 58px;
+  line-height: 6px;
+}
+
+.min-card input[type="text"]{
+  margin-bottom: 2px;
+}
+
+.min-card button{
+  width: 334px;
+  height: 49px;
+  margin-left: 10px;
+  margin-top: 9px;
+  border-radius: 7px;
+  background-color: #0093CA;
+  opacity: 1;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 17px;
+  outline: none;
+  border: none;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  padding-left: 17px;
+  font-size: 15px;
+}
+
+@media (max-width:1207px) {
+  .contenedor{
+    display: block;
+    height: 660px;
+    padding-bottom: 89px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 700px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: -900px;
+  }
+  .min-card button{
+    width: 776px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:1180px) {
+  .contenedor{
+    display: block;
+    height: 660px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 680px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: -900px;
+  }
+  .min-card button{
+    width: 755px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:1150px) {
+  .contenedor{
+    display: block;
+    height: 660px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 660px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: -900px;
+  }
+  .min-card button{
+    width: 736px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:1118px) {
+  .contenedor{
+    display: block;
+    height: 660px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 635px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: -900px;
+  }
+  .min-card button{
+    width: 711px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:1084px) {
+  .contenedor{
+    display: block;
+    height: 660px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 595px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: -900px;
+  }
+  .min-card button{
+    width: 670px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:1044px) {
+  .contenedor{
+    display: block;
+    height: 696px;
+    margin-top: 250px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 580px;
+    height: 65px;
+    margin-left: 95px;
+  }
+
+  .min-card input[type="text"]::placeholder,
+  input[type="password"]::placeholder{
+    font-size: 25px;
+  }x
+
+  .min-card span{
+    width: 65px;
+    height: 55px;
+    font-size: 33px;
+    padding-top: 15px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: -1000px;
+  }
+  .min-card button{
+    width: 657px;
+    height: 67px;
+    font-size: 30px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:1006px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 554px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 629px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:970px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 516px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 95px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 591px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:922px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 505px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 580px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:900px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 472px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 80px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 547px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:864px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 458px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 532px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:841px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 450px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 110px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 525px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:818px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 415px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 78px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 491px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:776px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 396px;
+    height: 56px;
+    margin-left: 95px;
+  }
+
+  .min-card input[type="text"]::placeholder,
+  input[type="password"]::placeholder{
+    font-size: 25px;
+  }
+
+  .min-card span{
+    width: 65px;
+    height: 40px;
+    padding-top: 20px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 472px;
+    height: 65px;
+    font-size: 25px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:746px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 375px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 78px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 449px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:714px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 350px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 75px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 425px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:682px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 330px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 404px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:654px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 310px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 67px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 385px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:622px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 286px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 63px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 360px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:590px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 265px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 62px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 339px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:554px) {
+  .contenedor{
+    display: block;
+    height: 1040px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 240px;
+    height: 46px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    height: 42px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 60px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 315px;
+    height: 50px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:546px) {
+  .contenedor{
+    display: block;
+    height: 700px;
+    padding-bottom: 288px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 238px;
+    margin-left: 95px;
+  }
+
+  .min-card input[type="text"]::placeholder,
+  input[type="password"]::placeholder{
+    font-size: 20px;
+  }
+  .min-card span{
+    width: 65px;
+    height: 31px;
+    font-size: 24px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 55px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 313px;
+    font-size: 20px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:526px) {
+  .contenedor{
+    display: block;
+    height: 900px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 219px;
+    margin-left: 95px;
+  }
+  .min-card span{
+    width: 65px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 55px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 295px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:494px) {
+  .contenedor{
+    display: block;
+    height: 900px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 210px;
+    margin-left: 85px;
+  }
+  .min-card span{
+    width: 55px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 275px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:471px) {
+  .contenedor{
+    display: block;
+    height: 900px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 210px;
+    margin-left: 85px;
+  }
+  .min-card span{
+    width: 55px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 140%;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 275px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:460px) {
+  .contenedor{
+    display: block;
+    height: 660px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 186px;
+    margin-left: 85px;
+  }
+  .min-card span{
+    width: 55px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 160%;
+    margin-left: 27px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 250px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:428px) {
+  .contenedor{
+    display: block;
+    height: 660px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+  input[type="password"]{
+    width: 160px;
+    margin-left: 85px;
+  }
+  .min-card span{
+    width: 55px;
+    margin-left: 30px;
+  }
+  .min-card img{
+    width: 160%;
+    margin-left: 27px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 226px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width:396px) {
+  .contenedor{
+    display: block;
+    height: 650px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+   input[type="password"]{
+    width: 181px;
+    margin-left: 65px;
+  }
+  .min-card span{
+    width: 55px;
+    margin-left: 10px;
+  }
+  .min-card img{
+    width: 160%;
+    margin-left: 24px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 245px;
+    margin-left: 7px;
+  }
+}
+
+@media (max-width:386px) {
+  .contenedor{
+    display: block;
+    height: 650px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+   input[type="password"]{
+    width: 186px;
+    margin-left: 53px;
+  }
+  .min-card span{
+    width: 45px;
+    margin-left: 8px;
+  }
+  .min-card img{
+    width: 160%;
+    margin-left: 24px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 240px;
+    margin-left: 7px;
+  }
+}
+
+@media (max-width:379px) {
+  .contenedor{
+    display: block;
+    height: 650px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+   input[type="password"]{
+    width: 170px;
+    margin-left: 55px;
+  }
+  .min-card span{
+    width: 45px;
+    margin-left: 10px;
+  }
+  .min-card img{
+    width: 160%;
+    margin-left: 24px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 225px;
+    margin-left: 7px;
+  }
+}
+
+@media (max-width:362px) {
+  .contenedor{
+    display: block;
+    height: 700px;
+    padding-bottom: 15px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+   input[type="password"]{
+    width: 178px;
+    margin-left: 42px;
+  }
+  .min-card span{
+    width: 35px;
+    margin-left: 7px;
+  }
+  .min-card img{
+    width: 160%;
+    margin-left: 24px;
+    margin-top: -900px;
+  }
+  .min-card button{
+    width: 219px;
+    margin-left: 7px;
+  }
+}
+
+@media (max-width:353px) {
+  .contenedor{
+    display: block;
+    height: 650px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+   input[type="password"]{
+    width: 158px;
+    margin-left: 55px;
+  }
+  .min-card span{
+    width: 45px;
+    margin-left: 10px;
+  }
+  .min-card img{
+    width: 160%;
+    margin-left: 24px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 212px;
+    margin-left: 7px;
+  }
+}
+
+@media (max-width:344px) {
+  .contenedor{
+    display: block;
+    height: 650px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card input[type="text"],
+   input[type="password"]{
+    width: 176px;
+    margin-left: 35px;
+  }
+  .min-card span{
+    width: 35px;
+    margin-left: 3px;
+  }
+  .min-card img{
+    width: 160%;
+    margin-left: 24px;
+    margin-top: 50px;
+  }
+  .min-card button{
+    width: 215px;
+    margin-left: 4px;
+  }
+}
+
+@media (max-width:338px) {
+  .contenedor{
+    display: block;
+    height: 200px;
+  }
+  .logo-coxti img{
+    display: none;
+  }
+  .min-card{
+
+  }
+  .min-card input[type="text"],
+   input[type="password"]{
+    width: 157px;
+    margin-left: 46px;
+  }
+  .min-card span{
+    width: 45px;
+    margin-left: 3px;
+  }
+  .min-card img{
+    width: 170%;
+    margin-left: 14px;
+    margin-bottom: 50px;
+  }
+  .min-card button{
+    width: 206px;
+    margin-left: 3px;
+  }
+}

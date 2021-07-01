@@ -1,0 +1,100 @@
+@layout('layout.app')
+
+@section('content')
+  <div class="box">
+    <h1 class="title">Usuarios</h1>
+    <input class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Search..">
+    <input class="col-md-3" data-table="order-table" type="date">
+      <hr>
+    <table class="table table-bordered order-table">
+      <thead>
+        <tr>
+          <th style="width: 80px;">#</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Creado</th>
+          <th>Modificar</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        @each(user in users)
+          <tr>
+            <td>
+              {{ ($loop.index + 1) }}
+            </td>
+            <td>
+              {{ user.name }}
+            </td>
+            <td>
+              {{ user.email }}
+            </td>
+            <td>
+              {{ user.created_at }}
+            </td>
+            <td>
+              <a href="/users/edit/{{user.id}}" class="btn btn-dark">Editar</a>
+            </td>
+            <td>
+              <form action="{{ 'users/' + user.id + '?_method=DELETE' }}" method="POST">
+               {{ csrfField() }}
+                <button type="submit" class="button is-danger is-outlined">
+                  <span class="icon is-small">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </span>
+                  <span>Eliminar</span>
+                </button>
+              </form>
+            </td>
+          </tr>
+        @else
+          <tr>
+            <td colspan="3" class="has-text-centered">¡Ningun usuario creado todavía!</td>
+          </tr>
+        @endeach
+      </tbody>
+    </table>
+  </div>
+
+  <script type="text/javascript">
+    (function(document) {
+      'use strict';
+
+      var LightTableFilter = (function(Arr) {
+
+        var _input;
+
+        function _onInputEvent(e) {
+          _input = e.target;
+          var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+          Arr.forEach.call(tables, function(table) {
+            Arr.forEach.call(table.tBodies, function(tbody) {
+              Arr.forEach.call(tbody.rows, _filter);
+            });
+          });
+        }
+
+        function _filter(row) {
+          var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+          row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+        }
+
+        return {
+          init: function() {
+            var inputs = document.getElementsByClassName('light-table-filter');
+            Arr.forEach.call(inputs, function(input) {
+              input.oninput = _onInputEvent;
+            });
+          }
+        };
+      })(Array.prototype);
+
+      document.addEventListener('readystatechange', function() {
+        if (document.readyState === 'complete') {
+          LightTableFilter.init();
+        }
+      });
+
+    })(document);
+    </script>
+@endsection
