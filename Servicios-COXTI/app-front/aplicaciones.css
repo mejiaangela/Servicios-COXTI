@@ -342,7 +342,7 @@ input[id^="spoiler"]{
 
 /*TABLA*/
 
-#table{
+#productos{
   width: 98%;
   margin-bottom: 40px;
   margin-top: 70px;
@@ -350,7 +350,7 @@ input[id^="spoiler"]{
   z-index: -1;
 }
 
-#table thead tr th{
+#productos thead tr th{
   background-color: #073669;
   color: white;
   height: 50px;
