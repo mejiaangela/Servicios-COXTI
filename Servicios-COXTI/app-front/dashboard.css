@@ -24,13 +24,26 @@ body{
 /*BOTONES*/
 .botones-informativos{
   display: flex;
+  flex-wrap: wrap;
   width: 83.6%;
-  height: 150px;
-  padding-right: 3.5%;
+  height: 19%;
   margin-top: -21px;
   padding-top: 10px;
   position: fixed;
-  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e7e7e;
+}
+
+@media (max-width:600px) {
+  .botones-informativos button{
+    width: 40%;
+    height: 5px;
+    margin: 10px 0;
+  }
+  .min-sidebar{
+    display: block;
+  }
 }
 
 .contenido .botones-informativos .btn3{
@@ -41,13 +54,14 @@ body{
   background-color: #0093CA;
   color: #ffffff;
   font-weight: 700;
-  height: 105px;
+  height: 100%;
   width: 30.5%;
-  margin-left: 20px;
+  min-width: 300px;
   border-radius: 20px;
   font-size: 20px;
   border: none;
   outline: none;
+  margin: 0 10px;
   cursor: pointer;
 }
 
@@ -223,13 +237,13 @@ input[id^="spoiler"]{
   border: 1px solid #000000;
 }
 
-#sidebar2{
+#min-sidebar{
   position: fixed;
   width: 80px;
   height: 80%;
   display: none;
   margin-top: 8%;
-  color: #ffffff;
+  color: black;
   background-color: #073669;
   border: 1px solid #000000;
 }
@@ -283,10 +297,6 @@ input[id^="spoiler"]{
   margin-top: 45px;
 }
 
-/*#sidebar:active{
-  left: 0;
-}*/
-
 #sidebar ul li{
   color: rgba(230, 230, 230, .9);
   text-align: center;
@@ -317,9 +327,6 @@ input[id^="spoiler"]{
 /*CONTENEDOR GENERAL DE LOS DIAGRAMAS*/
 
 /*Nuevos diagramas*/
-  #tiempoReal{
-    width: 100%;
-  }
   .contenedor{
     display: flex;
     margin-top: 3%;
@@ -337,10 +344,6 @@ input[id^="spoiler"]{
   }
   100% {
     transform: rotate(140.4deg);
-    /**
-     * 34% => 61.2deg 
-     * 61.2 + 79.2 => 140.4deg
-     */
   }
 }
 
@@ -350,10 +353,6 @@ input[id^="spoiler"]{
   }
   100% {
     transform: rotate(180deg);
-    /**
-     * 22% => 39.6deg  
-     * 140.4 + 39.6 => 180deg
-     */
   }
 }
 
@@ -367,7 +366,7 @@ input[id^="spoiler"]{
   }
 }
 
-/*MEDIAS-QUERIES*/
+/*MEDIAS-QUERIES
 
 @media (max-width:1077px) {
   .botones-informativos{
